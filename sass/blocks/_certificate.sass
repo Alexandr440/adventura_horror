@@ -1,0 +1,89 @@
+.section-certificate
+    position: relative 
+    background:  url('../img/certificate/certif.png')no-repeat  center
+    background-size: 45%
+    background-position: top right
+    z-index: 1
+    padding: 20px 0
+    &:before
+        content: ""
+        position: absolute
+        height: 100%
+        width: 100%
+        background-color: rgba(0,0,0, 0.7)
+        z-index: -1
+        top: 0
+        left: 0
+            
+.certificate
+    display: flex
+    margin: auto
+    padding: 60px
+    &__text
+        margin-bottom: 70px  
+        color: #fff
+        font-size: 20px
+        line-height: 1.8
+        font-family: 'Montserrat',Arial,sans-serif
+        font-weight: 400
+        margin-bottom: 20px
+    &__btn
+        display: inline-block        
+        margin: 10px auto      
+        color: #fff
+        border: none
+        cursor: pointer           
+        border-radius: 100px
+        letter-spacing: 3px
+        font-weight: 600
+        font-size: 20px
+        line-height: 30px
+        font-family: 'Montserrat',Arial,sans-serif
+        outline: none        
+        padding: 10px   35px   18px    
+        text-align: center
+        text-transform: uppercase
+        background-color: $sr
+        margin-bottom: 150px
+        
+    &-content
+        display: flex      
+        flex-direction: column        
+        align-items: flex-start       
+        flex-basis: 50%
+        &__title
+            h2
+                color: #fff
+                font-size: 50px
+                font-family: 'Helvetica Neue Cyr Light'
+        &__text
+            margin-bottom: 70px
+            color: #ffffff
+            font-size: 20px
+            line-height: 1.8
+            font-family: 'Helvetica Neue Cyr Light'
+            font-weight: 400
+            margin-bottom: 20px
+            span
+                color: #ff3600
+                text-shadow: 1px 1px 3px rgba(255, 54, 0, 0.7);
+        
+
+@media (max-width: 576px)
+    .section-certificate
+        background-size: 150%
+        background-position: center center
+        
+    .certificate
+        display: flex
+        flex-direction: column
+        padding: 0px
+        &-content
+            display: flex      
+            flex-direction: column        
+            align-items: flex-start       
+            flex-basis: 100%
+            &__title
+                h2
+                    font-size: 40px
+                    margin-bottom: 40px

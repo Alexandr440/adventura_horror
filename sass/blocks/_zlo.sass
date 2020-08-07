@@ -1,0 +1,219 @@
+.section-zlo
+    display: block
+    background: #000 url('../img/zlo/zlo.png') no-repeat left 20px  top
+    background-size: 40%
+    flex-wrap: wrap 
+    margin-top: 80px
+    margin-bottom: 50px    
+.zlo   
+    display: flex
+    justify-content: flex-end 
+    flex-wrap: wrap    
+    &__wrap
+         width: 55%   
+
+       
+    &__title        
+        position: relative
+        color: #ffffff  
+        font-family: 'Arial',Arial,sans-serif
+        line-height: 0.95
+        font-weight: 700
+        z-index: 2
+        margin-bottom: 70px
+        h2
+            font-size: 90px
+        &:after
+            content: ""
+            z-index: 3
+            position: absolute
+            background:  url(../img/sinister/razdel.png)no-repeat center
+            background-size: contain
+            width: 35%
+            height: 120px
+            left: 0px
+            bottom: -90px
+            z-index: 5
+           
+            //left: calc(50% + 100px/2)
+            
+           
+            
+    &__text
+              
+        color: #ffffff
+        font-size: 20px
+        +light
+        line-height: 1.25
+        
+        span            
+            color: $sr
+            +hevi  
+            
+        
+    
+
+    &__button
+        display: block
+        +hevi
+        background:   url('../img/sinister/blood.png') no-repeat center
+        background-size: contain       
+        color: #ffffff
+        font-size: 20px        
+        line-height: 1.55
+        padding: 60px
+        cursor: pointer        
+        margin-left: 50px
+        margin-top: 30px
+        max-width: 60%
+        text-transform: uppercase
+        text-align: center
+        a
+            text-decoration: none
+            outline: none
+            color: #fff
+    
+
+.vidjet
+    display: flex
+    justify-content: center
+    vertical-align: middle
+    align-items: center
+    flex-wrap: wrap
+    &-mir 
+        display: block
+        padding-top: 20px
+           
+
+    &-top
+        display: block
+        width: 200px
+        margin-right: 10px
+        img
+            width: 100%
+    &-gild
+        display: block 
+        width: 150px
+        
+        img
+            width: 100%
+    &-gid
+        display: block
+        width: 110px
+        margin-right: 30px
+        margin-bottom: 20px
+        margin-top: 15px
+        img
+            width: 100%
+    &-social
+        display: flex
+        flex-wrap: wrap 
+        flex-direction: row 
+        margin-bottom: 10px          
+
+        &__vk
+            display: block 
+                       
+            padding-right: 5px
+            padding-left: 20px    
+            
+
+        &__insta
+            display: block
+            margin-left: 10px
+
+
+
+@media (max-width: 768px)
+    .zlo
+        &__text
+            margin-right: 0
+        &__title
+            font-size: 60px
+            &:after            
+                width: 30%
+                height: 100px
+                left: 0px
+                bottom: -80px
+            
+        &__button            
+            min-width: 70%
+        
+        &__wrap
+            flex-basis: 80%
+    .section-zlo   
+        
+        background-size: 50%
+        left: 50%      
+
+
+@media (max-width: 576px)
+    .section
+        &-zlo
+            background: #000 url('../img/zlo/bg_zlo.jpg') no-repeat left bottom 150px
+            background-size: contain
+                           
+            
+    .zlo
+        display: block
+        &__wrap
+            display: block
+            width: 100%
+
+
+
+        &__title
+            display: inline-block
+            h2
+                text-align: center
+                font-size: 36px
+            &:after                           
+                width: 150px
+                height: 100px
+                left: calc(50% - 75px)
+                bottom: -80px
+            
+        &__text
+            margin-right: 0 auto
+
+        &__button            
+            width: 90%
+            display: block                     
+            background-size: contain           
+            font-size: 10px        
+            line-height: 1.4
+            margin: 0 auto
+            padding: 40px 50px
+            
+            text-align: center
+    .vidjet
+        display: flex
+        flex-direction: column
+        justify-content: flex-start    
+        flex-wrap: wrap
+        &-mir 
+            display: block
+            padding-top: 20px
+            
+
+        &-top
+            display: block
+            width: 210px
+            margin-bottom: 20px
+        &-social            
+            display: flex
+            justify-content: space-around         
+            
+
+            &__vk
+                display: block
+                padding: 0 40px 0 0
+                
+
+            &__insta
+                display: block
+
+          
+     
+          
+            

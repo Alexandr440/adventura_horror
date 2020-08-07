@@ -1,0 +1,200 @@
+.section-contacts
+.contacts
+    &-title
+        
+        h2
+            margin-bottom: 20px
+            color: #ffffff
+            font-size: 100px
+            +light
+            line-height: 1.55
+
+
+.contact
+    display: flex
+    flex-wrap: wrap       
+    margin-bottom: 120px
+   
+    &-wrap       
+        margin-left: 40px
+        display: flex
+        flex-direction: column             
+        flex-wrap: wrap
+        &__title
+            margin-bottom: 20px
+            display: block
+            color: #fc4646
+            font-size: 43px
+            +light
+            line-height: 1.25         
+                
+    &-maps
+        margin-left: 140px
+        flex-basis: 45%
+        max-width: 650px
+       
+.wrap-addres
+    color: #ffffff
+    font-size: 20px
+    +light
+    line-height: 1.55
+    
+  
+    &__title
+        //margin-top: 20px
+        display: block
+        color: #ffffff
+        font-size: 20px
+        +hevi
+        line-height: 1.55
+    
+    sub
+        display: block
+        margin-top: 10px
+
+
+
+.work-time
+    margin-top: 40px
+    display: flex
+    flex-direction: column
+    color: #ffffff
+    font-size: 20px
+    +light
+    line-height: 1.55
+    &__title
+        color: #ffffff
+        font-size: 20px
+        +hevi
+        line-height: 1.55
+        letter-spacing: 5px  
+
+.namber
+    text-decoration: none
+    color: #fff 
+    &:hover
+        color: $al            
+            
+.wrap-telephon
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+    color: #ffffff
+    font-size: 20px 
+    +light
+    line-height: 1.55
+    text-decoration: none
+    &__title 
+        color: #ffffff
+        font-size: 20px
+        +hevi
+        line-height: 1.55
+        letter-spacing: 5px 
+
+@media (max-width: 1199px) 
+   .contact
+       &-maps
+            margin-left: 30px
+
+@media (max-width: 991px)
+    .contact       
+            
+        &-wrap
+            margin-left: 10px      
+            
+        &-maps
+            margin-top: 20px
+            margin-left: 80px 
+
+@media (max-width:768px)
+    .contacts
+        &-title           
+            h2
+                margin-bottom: 20px
+                color: #ffffff
+                font-size: 80px
+                +light
+                line-height: 1.55
+    .contact
+        display: flex
+        flex-wrap: no-wrap       
+        
+        &-wrap       
+            margin-left: 20px
+            display: flex
+            flex-basis: 45%
+            flex-direction: column             
+            flex-wrap: wrap
+            &__title
+                margin-bottom: 15px
+                
+                font-size:  36px
+               
+                
+        &-maps
+            margin-left: 10px
+            margin-top: 0            
+            max-width: 350px
+        &-yn
+            width: 100%
+           
+
+
+
+                    
+            
+
+@media (max-width:576px)
+    .contacts
+        &-title        
+            h2
+                font-size: 50px
+
+    .contact
+        display: block
+        margin-left: 0 auto
+           
+              
+        &-maps
+            display: block         
+            margin: 0 auto
+            width: 318px
+        &-yn
+            width: 100%
+            
+
+
+
+    .wrap-telephon
+        margin-top: 20px
+        margin-bottom: 40px
+        
+       
+            
+@media (max-width: 320px)
+    .contacts
+        &-title
+            h2
+                 margin-bottom: 5px
+    .contact
+        display: block
+        margin-left: 0 auto
+           
+              
+        &-maps
+            display: block         
+            margin: 0 auto
+            width: 250px
+        &-yn
+            width: 100%
+    
+        &-wrap
+            &__title
+                font-size: 30px   
+
+                   
+            
+       
+   
+
+    

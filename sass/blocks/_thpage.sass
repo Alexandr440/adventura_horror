@@ -1,0 +1,92 @@
+body
+    
+
+    
+.section-thanks
+    overflow-y: hidden
+    background-color: red
+    background: url("../img/thank/thank.jpg")
+    background-repeat: no-repeat
+    background-size: 50%
+    background-position: left top
+    height: 100vh
+    width: 100vw
+    overflow-y: hidden
+.thanks
+    padding-top: 20%
+    display: flex
+    width: 100% 
+    height: 100%   
+    justify-content: flex-end
+    align-items: center
+    //background-color: red
+    &__wrap
+        
+        flex-basis: 90%
+        //background-color: orange
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        padding: 70px
+        border: 5px   solid  rgba($waite, 0.5) 
+
+        
+
+    &__title
+        display: block
+        margin: 0 auto
+        text-align: center
+        +hevi
+        color: #fff
+        font-size: 40px
+        margin-bottom: 30px
+    &__description
+        display: block
+        margin: 0 auto
+        color: $waite
+        +light
+        font-size: 30px
+        text-align: center
+@media (max-width: 576px)
+    .section-thanks
+        background-color: red
+        background: url("../img/thank/thank.jpg")
+        background-repeat: no-repeat
+        background-size: 100%
+        background-position: left top 50px
+        height: 100vh
+        width: 100vw
+        overflow-y: hidden
+    .thanks
+        padding-top: 70%       
+        width: 100% 
+        height: 100%   
+        justify-content: center
+       
+        
+        &__wrap
+            
+            flex-basis: 100%
+            flex-direction: column
+            flex-wrap: wrap
+            padding: 30px 10px
+            border: 5px   solid  rgba($waite, 0.5) 
+        &__title
+           
+            font-size: 30px
+            margin-bottom: 10px
+            
+        &__description
+            opacity: 0.8
+           
+          
+            font-size: 20px
+           
+
+
+
+
+
+   
+        
+            

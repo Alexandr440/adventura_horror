@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,6BAA6B;CAAG",
+    "sources": [
+        "../sass/blocks/thanks_page.sass"
+    ],
+    "names": [],
+    "file": "thanks_page.css"
+}

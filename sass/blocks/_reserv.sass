@@ -1,0 +1,98 @@
+.reservation-block
+    &__title
+        
+        display: block        
+        color: #fff         
+        margin-bottom: 36px
+        line-height: 1
+        h2       
+            font-size: 50px
+            +light
+            
+    &__text
+        margin-top: 0
+        font-size: 30px
+        display: block
+        +light
+
+    &__price
+        width: 65%
+        color: #ffffff
+        font-size: 20px
+        +light
+        line-height: 1.5
+
+.price
+    &__weekends
+        border-radius: 3px
+        padding: 5px
+        background-color: #97d521
+        color: #fff
+        +hevi
+    &__weekdays
+        border-radius: 3px
+        padding: 5px
+        background-color: #ecfb40
+        color: #fff
+        +hevi
+
+.reserv-select__bronika
+    margin-bottom: 50px
+    width: 100%
+    
+    
+        
+@media (max-width: 576px)
+    .reservation-block
+        &__title
+            display: block
+            
+            color: #fff
+            +light
+            h2
+                font-size: 40px
+                line-height: 1
+                margin-bottom: 30px
+                
+           
+           
+            span
+                font-size: 26px
+                display: block
+                +light
+
+        &__price
+            width: 100%
+            color: #ffffff
+            font-size: 20px
+            +light
+            line-height: 1.5
+    
+    .price
+        &__weekends
+            border-radius: 3px
+            padding: 5px
+            background-color: #97d521
+            color: #fff
+            +hevi
+        &__weekdays
+            border-radius: 3px
+            padding: 5px
+            background-color: #ecfb40
+            color: #fff
+            +hevi
+
+@media (max-width: 321px)
+
+    .reservation-block
+         &__price
+            width: 100%
+            
+    .price
+        &__weekdays
+           
+            border-radius: 3px
+            padding: 5px
+            background-color: #ecfb40
+            color: #fff
+            +hevi

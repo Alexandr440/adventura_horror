@@ -1,0 +1,68 @@
+.thanksblank
+    position: fixed
+    display: none
+    width: 640px
+    height: 100px
+    opacity: 0
+    transition: all 1.8s   
+    background: #fff
+    color: #000000
+    top: 25%
+    left: calc(50% - 320px)
+    z-index: 1000
+    text-align: center
+    border: 3px double red
+    border-radius: 3px 
+    padding: 3px
+
+.thanksblank-text
+    display: inline-block
+    margin: 20px auto   
+    font-size: 20px
+    line-height: 1.2
+    +hevi
+
+.thanksblank-close
+    position: absolute
+    right: 10px
+    text-outline: 10px
+    cursor: pointer
+    font-size: 30px
+
+.thanksblank-active
+    display: block
+    opacity: 1
+    top: 50%
+
+
+
+
+@media (max-width:576px)
+    .thanksblank 
+         
+        width: 280px
+        height: 250px
+        opacity: 1 
+        left: calc(50% - 140px)        
+        
+    .thanksblank-text
+        display: inline-block
+        margin: 70px auto   
+        font-size: 20px
+        opacity: 0.8
+        
+    .thanksblank-close
+       
+        left: calc(50% - 20px)
+        top: -50px
+        text-outline: 10px
+        cursor: pointer
+        font-size: 30px
+        width: 40px
+        height: 40px
+        background-color: #fff
+        border-radius: 50%
+        line-height: 32px
+        
+
+    

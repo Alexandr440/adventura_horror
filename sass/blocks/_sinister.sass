@@ -1,0 +1,269 @@
+
+.section-sinister 
+    display: block  
+    background: url('../img/sinister/killer.jpg') no-repeat  top left
+    background-size: contain    
+    margin-top: 80px    
+.sinister   
+    display: flex
+    justify-content: flex-end
+    flex-wrap: wrap    
+    &__wrap
+         flex-basis: 60%   
+
+       
+    &__title        
+        position: relative
+        color: #ffffff
+        display: inline-block
+        font-family: 'Arial',Arial,sans-serif
+        line-height: 0.95
+        font-weight: 700        
+        z-index: 1
+        margin-bottom: 70px
+        h2
+            font-size: 90px
+            
+
+        &:after
+            content: ""
+            position: absolute
+            background:  url(../img/sinister/razdel.png)no-repeat center
+            background-size: contain
+            width: 450px
+            height: 100px
+            left: 0
+            bottom: -80px
+            z-index: 2
+           
+    &__question
+                
+        color: #ffffff
+        font-size: 20px
+        +light
+        line-height: 1.25
+        
+
+            
+            
+    &__text
+        margin-top: 20px       
+        color: #ffffff
+        font-size: 20px
+        +light
+        line-height: 1.8
+        margin-right: 59px  
+       
+    &__cta-text
+        
+        color: #fff
+        font-size: 20px
+        +light       
+        line-height: 1.8
+        margin-bottom: 40px
+        
+        span            
+            color: $sr
+            +hevi
+            
+           
+
+    &__time-text
+        margin-top: 20px
+        color: #fff
+        font-size: 20px
+        +light
+        line-height: 1.25
+    &__note
+        margin-top: 30px
+        color: #fff
+        font-size: 20px
+        +light
+        line-height: 1.25
+
+    &__button
+        display: block
+        +hevi
+        background: url('../img/sinister/blood.png') no-repeat center
+        background-size: contain       
+       
+        font-size: 20px        
+        line-height: 1.55
+        padding: 70px
+        cursor: pointer
+        margin-left: 50px
+        margin-top: 30px
+        max-width: 60%
+        text-transform: uppercase
+        text-align: center
+        a
+            text-decoration: none
+            color: #ffffff    
+
+.vidjet
+    display: flex
+    justify-content: center
+    vertical-align: middle
+    align-items: center
+    flex-wrap: wrap
+    &-mir 
+        display: block
+        padding-top: 20px
+           
+
+    &-top
+        display: block
+        width: 200px
+   
+    &-socialnetwork
+        display: flex
+        flex-wrap: no-wrap 
+        flex-direction: row 
+        margin-right: 20px         
+
+        &__vk
+            display: block
+            padding-right: 5px
+           
+
+        &__insta
+            display: block
+
+
+
+
+
+@media (max-width: 991px)
+    .section-sinister
+            background: url('../img/sinister/blood.png') no-repeat 
+            background-position: top center 
+            background-size: contain
+        
+       
+    .sinister
+        
+        &__text
+            margin-right: 0
+        &__button            
+            min-width: 70%
+        
+        &__wrap
+            flex-basis: 60% 
+        &__button            
+            max-width: 75%
+
+    .vidjet        
+        &-socialnetwork
+            display: flex
+            
+
+            &__vk
+                display: block
+                padding-left: 20px
+                margin-right: 20px    
+                
+
+            &__insta
+                display: block
+
+
+
+
+
+
+@media (max-width: 768px)
+    .section-sinister
+        background: url('../img/sinister/kill.png') no-repeat center
+        background-size: contain       
+        
+    .sinister
+        &__text
+            margin-right: 0
+        &__title
+            font-size: 80px
+            &:after            
+                width: 400px
+                height: 100px
+                left: 0
+                bottom: -80px
+            
+        &__button            
+            max-width: 70%
+        
+        &__wrap
+            flex-basis: 90%
+
+@media (max-width: 576px)
+
+    .section-sinister     
+        background-image:   url('../img/sinister/kill.png') no-repeat top center
+        background-size: cover
+              
+    .sinister
+
+        &__title                
+            position: relative
+            text-align: center
+            font-size: 36px
+            &:after 
+                position: absolute                          
+                width: 100%
+                height: 100px
+                left: 0
+                bottom: -80px
+
+            h2
+                font-size: 46px
+
+
+        &__wrap
+           display: block
+           width: 100%
+           margin: 0 auto
+        &__text
+            margin-right: 0 auto
+
+        &__button
+            width: 90%
+            display: block                     
+            background-size: contain           
+            font-size: 10px        
+            line-height: 1.4
+            margin: 0 auto            
+            text-align: center
+            padding: 40px 50px
+    .vidjet
+        display: flex
+        flex-direction: column
+        justify-content: flex-start    
+        flex-wrap: wrap
+        &-mir 
+            display: block
+            padding-top: 20px
+            
+
+        &-top
+            display: block
+            width: 210px
+            margin-bottom: 20px
+        &__gid
+            display: block
+            width: 210px
+            margin-bottom: 20px
+
+
+        &-socialnetwork
+            display: flex 
+            justify-content: space-between        
+            
+
+            &__vk
+                display: block
+                
+                padding-left: 0
+                padding-right: 40px
+                margin-right: 20px    
+                
+
+            &__insta
+                display: block
